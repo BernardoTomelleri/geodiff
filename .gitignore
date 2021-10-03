@@ -3,3 +3,7 @@
 *.fdb_latexmk
 *.fls
 *.synctex.gz
+
+# Vim backup files
+*.tex~
+*.tex.un~
