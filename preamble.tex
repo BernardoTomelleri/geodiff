@@ -1,0 +1,56 @@
+% path to figure folder
+\graphicspath{{figs/}}
+
+% abbreviation for (sub_/super^)scripts of \lim, \sum,... in inline math
+\newcommand{\ds}{\displaystyle} 
+\newcommand{\numberset}{\mathbb}
+\newcommand{\C}{\numberset{C}}
+\newcommand{\R}{\numberset{R}}
+\newcommand{\Q}{\numberset{Q}}
+\newcommand{\Z}{\numberset{Z}}
+\newcommand{\N}{\numberset{N}}
+\DeclarePairedDelimiter{\norm}{\lVert}{\rVert}
+\DeclarePairedDelimiter{\scalar}{\langle}{\rangle}
+\newtheorem{lem}{Lemma}[section]
+\newtheorem{definizione}{Definizione}[section]
+\newtheorem{teorema}{Teorema}[section]
+\newtheorem{pro}{Proposizione}[section]
+\newtheorem{cor}{Corollario}[section]
+\declaretheoremstyle[
+spaceabove=6pt, spacebelow=6pt,
+headfont=\normalfont\bfseries,
+notefont=\mdseries, notebraces={(}{)},
+bodyfont=\normalfont,
+postheadspace=1em,
+qed=,
+]{exercise_style}
+\declaretheorem[style=exercise_style, name=Esempio, numberwithin=section]{example}
+\declaretheorem[style=exercise_style, name=Esercizio, 
+numberwithin=section]{exercise}
+\declaretheorem[style=exercise_style, name=Problema,
+numberwithin=subsection]{problem}
+\declaretheorem[style=exercise_style, name=Osservazione, 
+numberwithin=section]{observation}
+
+% abbreviated labels lowercase c
+\crefname{lem}{Lem.}{Lemm.}
+\crefname{definizione}{Def.}{Def.ni}
+\crefname{teorema}{Teo.}{Teo.mi}
+\crefname{pro}{Prop.}{Propp.}
+\crefname{cor}{Cor.}{Corr.}
+% non-abbreviated labels uppercase C
+\Crefname{lem}{Lemma}{Lemmi}
+\Crefname{definizione}{Definizione}{Definizioni}
+\Crefname{teorema}{Teorema}{Teoremi}
+\Crefname{pro}{Proposizione}{Proposizioni}
+\Crefname{cor}{Corollario}{Corollari}
+
+% turns all (hyperlinked) references black [default is blue]
+\hypersetup{
+	linktoc=all,
+	colorlinks=true,
+	linkcolor=black
+}
+
+% imports math shorthand notation
+\input{math}
