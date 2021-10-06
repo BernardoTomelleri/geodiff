@@ -1,5 +1,5 @@
 # Fdb version 3
-["pdflatex"] 1633300070 "exercises.tex" "exercises.pdf" "exercises" 1633300071
+["pdflatex"] 1633552963 "exercises.tex" "exercises.pdf" "exercises" 1633552965
   "/etc/texmf/web2c/texmf.cnf" 1622815944 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -45,6 +45,8 @@
   "/usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb" 1546638885 64555 1bdfd101450d8daa1682251ffcdf0074 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb" 1546638885 62231 6fa2851364e6117779162ea79cb96ef4 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb" 1136849748 12410 7504dd653d0e7cf266cb973aeafd597c ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb" 1136849748 9356 a3851bc942e9b6995883193472ba1847 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/mathpazo/fplmri.pfb" 1136849748 15213 d999bbe8bd9c8f231f3f66a737c76478 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb" 1136849748 52406 dad2f72863a03727d5f536c64a69c452 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb" 1136849748 52665 661b1e6b26edb5f50dd491f8a701cb57 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb" 1136849748 50022 90249cba7e3e4e9845f80328d6f9bd13 ""
@@ -249,13 +251,13 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1581979058 38841 ce3692aa899bb693b90b87eaa5d4d84e ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1622820061 4770781 1ed1abab22da9c3e2cc82e4db562318b ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1622820108 8257294 fafb6eecdb6b6d0781212e0364f609f4 ""
-  "exercises.aux" 1633300071 2197 aaa97f5cfc9c30f2fdfd77c0cc401f13 "pdflatex"
-  "exercises.out" 1633300071 58 701ca37f805b6aa71e9cf373c86f6124 "pdflatex"
-  "exercises.tex" 1633299976 3664 c7e3ab8ae2473bbc2c1aa2520a33f34c ""
+  "exercises.aux" 1633552964 2197 91aa0d0f988f1a63d74e222203f27a4d "pdflatex"
+  "exercises.out" 1633552964 58 701ca37f805b6aa71e9cf373c86f6124 "pdflatex"
+  "exercises.tex" 1633552963 4854 d99a441071cd63c2ce11674f56c91848 ""
   "math.tex" 1633300041 3747 1f4431f6b4aceeb47ff48a349b57c966 ""
   "preamble.tex" 1633300016 1380 92d7959dfa2228514888ceb00dbd6af3 ""
   (generated)
-  "exercises.log"
   "exercises.aux"
   "exercises.out"
   "exercises.pdf"
+  "exercises.log"

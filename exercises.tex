@@ -64,7 +64,9 @@ intorno $A$ di $f(x)$, la controimmagine $f^{-1}(A)$ è un intorno di $x$.
 Sia $K$ uno spazio topologico compatto. Sia $C \subseteq K$ un sottoinsieme
 chiuso. Mostra che $C$ è compatto.
 \begin{proof}[Svolgimento]
-
+Per ipotesi esiste un ricoprimento aperto finito $\left\{A_i\right\}$ tale
+che $\bigcup_i A_i = K$. Se $C \subseteq K$, allora lo stesso ricoprimento
+a maggior ragione copre anche $C$ e continua ad essere finito.
 \end{proof}
 \end{exercise}
 
@@ -72,7 +74,22 @@ chiuso. Mostra che $C$ è compatto.
 Mostra che il segmento $[0, 1]$ è connesso, usando solo la definizione di
 connesso (e nessun altro teorema: di solito questo fatto si mostra subito dopo
 la definizione).
-\begin{proof}[Svolgimento]
+\begin{proof}
+Per assurdo supponiamo che $[0, 1]$ sia unione disgiunta di due sottoinsiemi
+aperti $A, B \subseteq [0, 1] \; : A \cup B = [0, 1]$ con
+$A \neq \emptyset$, $B \neq \emptyset$ e $A \cap B = \emptyset$.
+Supponiamo che $0 \in A$, poiché $A$ è aperto $\exists \epsilon > 0$
+tale che un intorno $U(0)_\epsilon = [0, \epsilon) \subseteq A$.
+Consideriamo il $\sup_\epsilon \{U(0)_\epsilon\} = U(0)_\eta$ di questi
+intorni; per ipotesi dev'essere $\eta \neq 1$ (altrimenti $[0, 1)$ sarebbe
+contenuto in $A$, dunque $A = [0, 1]$ chiuso). Ora, poiché 
+$A \cap B = \emptyset$ sono aperti disgiunti, $\eta \not\in B$, ma
+$\eta \in A$. Ma allora sempre per apertura di $A$ dovrebbe esistere un
+intorno di $\eta$ contenuto in $[0, 1)$ e quindi un secondo raggio 
+$\eta' > \eta$ per cui vale ancora $U(0)_\eta' = [0, \eta') \subseteq A$.
+Assurdo per definizione di $\eta$ come $\sup$. Da cui concludiamo che
+$\eta \in A$, $A = [0, 1]$ e $B = \emptyset$, cioè $[0, 1]$ non è
+sconnesso.
 
 \end{proof}
 \end{exercise}

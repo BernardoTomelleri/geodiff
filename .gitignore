@@ -1,8 +1,8 @@
 # Latex compiler outfiles
 *.aux
-*.fdb_latexmk
+*.fdb_latexmk*
 *.fls
-*.synctex.gz
+*.synctex.gz*
 
 # Vim backup files
 *.tex~
