@@ -1,4 +1,4 @@
-\documentclass{article}[a4paper, 12pt, italian]
+\documentclass[a4paper, 12pt, italian]{article}
 \usepackage[utf8]{inputenc}
 \usepackage{amsmath, amssymb, amsfonts, amscd, amsthm, thmtools, mathtools}
 \usepackage[pdftex, hyperindex, plainpages=false]{hyperref}
@@ -22,7 +22,8 @@
 \geometry{left=25mm, right=25mm, top=25mm, bottom=25mm}
 
 \title{Esercizi di Geometria differenziale}
-\author{Bernardo Tomelleri\thanks{Università di Pisa}}
+\author{Bernardo Tomelleri\thanks{Esercizi svolti in collaborazione con Marco
+Romagnoli $(578061)$} $(587829)$}
 \date{\today}
 
 \begin{document}
@@ -55,7 +56,23 @@ Sia $f: X \to Y$ una funzione fra spazi topologici. Mostra che $f$ è
 continua se e solo se vale il fatto seguente: per ogni $x \in X$ e per ogni
 intorno $A$ di $f(x)$, la controimmagine $f^{-1}(A)$ è un intorno di $x$.
 \begin{proof}[Svolgimento]
-
+Per definizione $f$ è continua se la controimmagine di ogni sottoinsieme
+aperto di $Y$ è un aperto in $X$:
+Se $A \in \tau_Y \implies f^{-1}(A) \in \tau_X$. Per prima cosa supponiamo
+$f$ continua e prendiamo un generico punto $x \in X$ e un intorno $A$ di $f(x)$
+in $Y$. Per ipotesi $f^{-1}(A)$ è un aperto di $X$ che contiene $x$ (visto
+che per costruzione $f(x) \in A$) quindi è un intorno di $x$.\newline
+Viceversa, se $\forall x \in X$ e $\forall A$ intorno di $f(x)$ in $Y$ la sua
+controimmagine $f^{-1}(A) \subseteq X$ è un intorno di $x$, consideriamo un
+aperto $B \subseteq Y$ qualsiasi:
+\begin{enumerate}
+\item Se $B \cap f(X) = \emptyset$, allora $f^{-1}(B) = \emptyset$ che per
+definizione di spazio topologico è sempre un aperto di $X$.
+\item Se invece $B \cap f(X) \neq \emptyset \implies \exists x: f(x) \in B$,
+cioè $B$ è un intorno di $f(x)$. Per ipotesi allora $f^{-1}(B) \subseteq X$ 
+è a sua volta un intorno di $x$ e, a maggior ragione, $f^{-1}(B)$ è un
+aperto di $X$.
+\end{enumerate}
 \end{proof}
 \end{exercise}
 
