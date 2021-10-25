@@ -1,0 +1,102 @@
+\declaretheoremstyle[
+spaceabove=6pt, spacebelow=6pt,
+headfont=\normalfont\bfseries\itshape,
+notefont=\mdseries, notebraces={(}{)},
+bodyfont=\normalfont,
+postheadspace=1em,
+qed=,
+]{exercise_style}
+
+\declaretheoremstyle[
+spaceabove=6pt, spacebelow=6pt,
+postheadspace=1em,
+qed=,
+]{theorem_style}
+
+\declaretheoremstyle[
+spaceabove=6pt, spacebelow=6pt,
+postheadspace=1em,
+qed=,
+]{axiom_style}
+
+\declaretheorem[name=Teorema,numberwithin=section]{theorem}
+\declaretheorem[name=Lemma,sibling=theorem]{lemma}
+\declaretheorem[name=Proposizione,sibling=theorem]{proposition}
+\declaretheorem[name=Corollario,sibling=theorem]{corollary}
+\declaretheorem[name=Paradosso,sibling=theorem]{paradox}
+\declaretheorem[style=axiom_style,name=Assioma,sibling=theorem]{axiom}
+\declaretheorem[name=Definizione,numberwithin=section]{definition}
+\declaretheorem[style=exercise_style,name=Esempio,numberwithin=section]{example}
+\declaretheorem[style=exercise_style,name=Esercizio,numberwithin=section]{exercise}
+\declaretheorem[style=exercise_style,name=Osservazione,numberwithin=section]{remark}
+
+%\renewcommand\qedsymbol{Deh, per forza!}
+
+%\newcommand{\abs}[1]{{\left|#1\right|}}
+%\newcommand{\norm}[1]{{\|#1\|}}
+\DeclareMathOperator{\Imaginarypart}{Im}
+\renewcommand{\Im}{\Imaginarypart}
+\DeclareMathOperator{\Realpart}{Re}
+\renewcommand{\Re}{\Realpart}
+
+% greek letters
+\newcommand{\eps}{\varepsilon}
+\renewcommand{\phi}{\varphi}
+
+% blackboard letters
+\newcommand{\CC}{\mathbb C}
+\newcommand{\HH}{\mathbb H}
+\newcommand{\II}{\mathbb{I}}
+\newcommand{\KK}{\mathbb K}
+\newcommand{\NN}{\mathbb N}
+\newcommand{\QQ}{\mathbb Q}
+\newcommand{\RR}{\mathbb R}
+\newcommand{\TT}{\mathbb T}
+\newcommand{\ZZ}{\mathbb Z}
+
+% Upright d in math mode (for differentials).
+% -> d
+\newcommand{\ud}{\mathrm{d}}
+
+% Differential.
+% -> dx
+\newcommand{\diff}[1][x]{\,\ud{#1}}
+
+% Base command for defining derivatives.
+% -> df/dx or d^kf/dx^k
+\newcommand{\basederivative}[4][]{%
+  \displaystyle%
+  \ifx\\#1\\\frac{#4#2}{#4#3}%
+  \else%
+  \frac{#4^#1#2}{#4#3^#1}%
+  \fi%
+}
+
+% Total derivative.
+% -> df/dx(x) or d^kf/dx^k(x)
+\newcommand{\td}[4][]{%
+  \basederivative[#1]{#2}{#3}{\ud}%
+  \ifx\\#4\\%
+  \else%
+  \mkern-4mu\left(#4\right)%
+  \fi%
+}
+
+% Partial derivative.
+% -> df/dx(x) or d^kf/dx^k(x)
+\newcommand{\pd}[4][]{%
+  \basederivative[#1]{#2}{#3}{\partial}%
+  \ifx\\#4\\%
+  \else%
+  \mkern-4mu\left(#4\right)%
+  \fi%
+}
+
+% Tilde under variables v_~
+\DeclareMathAccent{\wtilde}{\mathord}{largesymbols}{"65}
+\newcommand{\utld}[1]{\underaccent{\wtilde}{#1}}
+
+\newcommand{\ds}{\displaystyle}
+
+% Image of a map
+\DeclareMathOperator{\Ima}{Im}

@@ -1,0 +1,669 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.10.4)  15 OCT 2021 11:58
+entering extended mode
+**./math.tex
+(math.tex
+LaTeX2e <2021-06-01> patch level 1
+L3 programming layer <2021-08-27>
+! Undefined control sequence.
+l.1 \declaretheoremstyle
+                        [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \declaretheoremstyle[
+                         
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+Missing character: There is no [ in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no v in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no s in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no c in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no b in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no l in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no w in font nullfont!
+Missing character: There is no = in font nullfont!
+Missing character: There is no 6 in font nullfont!
+Missing character: There is no p in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no , in font nullfont!
+Missing character: There is no h in font nullfont!
+Missing character: There is no e in font nullfont!
+Missing character: There is no a in font nullfont!
+Missing character: There is no d in font nullfont!
+Missing character: There is no f in font nullfont!
+Missing character: There is no o in font nullfont!
+Missing character: There is no n in font nullfont!
+Missing character: There is no t in font nullfont!
+Missing character: There is no = in font nullfont!
+! Missing $ inserted.
+<inserted text> 
+                $
+l.8 ]{exercise_
+               style}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 8.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 8.
+! Extra }, or forgotten $.
+l.8 ]{exercise_style}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.9 
+    
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--9
+[]
+ []
+
+
+Overfull \hbox (3.55553pt too wide) in paragraph at lines 1--9
+\OT1/cmr/bx/it/10 ,
+ []
+
+
+Overfull \hbox (25.72751pt too wide) in paragraph at lines 1--9
+\OT1/cmr/bx/it/10 note-
+ []
+
+
+Overfull \hbox (32.18306pt too wide) in paragraph at lines 1--9
+\OT1/cmr/bx/it/10 font=\OT1/cmr/m/it/10 ,
+ []
+
+
+Overfull \hbox (22.23317pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/it/10 note-
+ []
+
+
+Overfull \hbox (45.10522pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/it/10 braces=(),
+ []
+
+
+Overfull \hbox (22.23314pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/it/10 body-
+ []
+
+
+Overfull \hbox (27.56653pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/it/10 font=\OT1/cmr/m/n/10 ,
+ []
+
+
+Overfull \hbox (22.00005pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/n/10 post-
+ []
+
+
+Overfull \hbox (72.27792pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/n/10 headspace=1em,
+ []
+
+
+Overfull \hbox (25.83339pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/n/10 qed=,
+ []
+
+
+Overfull \hbox (57.45613pt too wide) in paragraph at lines 1--9
+\OT1/cmr/m/n/10 ]exercise$[]\OML/cmm/m/it/10 tyle$ 
+ []
+
+! Undefined control sequence.
+l.10 \declaretheoremstyle
+                         [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.10 \declaretheoremstyle[
+                          
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.14 ]{theorem_
+               style}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.14 ]{theorem_style}
+                     
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.15 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (22.77779pt too wide) in paragraph at lines 10--15
+[]\OT1/cmr/m/n/10 [
+ []
+
+
+Overfull \hbox (26.72224pt too wide) in paragraph at lines 10--15
+\OT1/cmr/m/n/10 space-
+ []
+
+
+Overfull \hbox (50.00014pt too wide) in paragraph at lines 10--15
+\OT1/cmr/m/n/10 above=6pt,
+ []
+
+
+Overfull \hbox (26.72224pt too wide) in paragraph at lines 10--15
+\OT1/cmr/m/n/10 space-
+ []
+
+
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 10--15
+\OT1/cmr/m/n/10 be-
+ []
+
+
+Overfull \hbox (39.72232pt too wide) in paragraph at lines 10--15
+\OT1/cmr/m/n/10 low=6pt,
+ []
+
+
+Overfull \hbox (22.00005pt too wide) in paragraph at lines 10--15
+\OT1/cmr/m/n/10 post-
+ []
+
+
+Overfull \hbox (72.27792pt too wide) in paragraph at lines 10--15
+\OT1/cmr/m/n/10 headspace=1em,
+ []
+
+
+Overfull \hbox (25.83339pt too wide) in paragraph at lines 10--15
+\OT1/cmr/m/n/10 qed=,
+ []
+
+
+Overfull \hbox (59.34506pt too wide) in paragraph at lines 10--15
+\OT1/cmr/m/n/10 ]theorem$[]\OML/cmm/m/it/10 tyle$ 
+ []
+
+! Undefined control sequence.
+l.16 \declaretheoremstyle
+                         [
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 \declaretheoremstyle[
+                          
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.20 ]{axiom_
+             style}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Extra }, or forgotten $.
+l.20 ]{axiom_style}
+                   
+I've deleted a group-closing symbol because it seems to be
+spurious, as in `$x}$'. But perhaps the } is legitimate and
+you forgot something else, as in `\hbox{$x}'. In such cases
+the way to recover is to insert both the forgotten and the
+deleted material, e.g., by typing `I$}'.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.21 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (22.77779pt too wide) in paragraph at lines 16--21
+[]\OT1/cmr/m/n/10 [
+ []
+
+
+Overfull \hbox (26.72224pt too wide) in paragraph at lines 16--21
+\OT1/cmr/m/n/10 space-
+ []
+
+
+Overfull \hbox (50.00014pt too wide) in paragraph at lines 16--21
+\OT1/cmr/m/n/10 above=6pt,
+ []
+
+
+Overfull \hbox (26.72224pt too wide) in paragraph at lines 16--21
+\OT1/cmr/m/n/10 space-
+ []
+
+
+Overfull \hbox (13.61113pt too wide) in paragraph at lines 16--21
+\OT1/cmr/m/n/10 be-
+ []
+
+
+Overfull \hbox (39.72232pt too wide) in paragraph at lines 16--21
+\OT1/cmr/m/n/10 low=6pt,
+ []
+
+
+Overfull \hbox (22.00005pt too wide) in paragraph at lines 16--21
+\OT1/cmr/m/n/10 post-
+ []
+
+
+Overfull \hbox (72.27792pt too wide) in paragraph at lines 16--21
+\OT1/cmr/m/n/10 headspace=1em,
+ []
+
+
+Overfull \hbox (25.83339pt too wide) in paragraph at lines 16--21
+\OT1/cmr/m/n/10 qed=,
+ []
+
+
+Overfull \hbox (50.15063pt too wide) in paragraph at lines 16--21
+\OT1/cmr/m/n/10 ]axiom$[]\OML/cmm/m/it/10 tyle$ 
+ []
+
+! Undefined control sequence.
+l.22 \declaretheorem
+                    [name=Teorema,numberwithin=section]{theorem}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \declaretheorem[
+                     name=Teorema,numberwithin=section]{theorem}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.23 \declaretheorem
+                    [name=Lemma,sibling=theorem]{lemma}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 \declaretheorem
+                    [name=Proposizione,sibling=theorem]{proposition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.25 \declaretheorem
+                    [name=Corollario,sibling=theorem]{corollary}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.26 \declaretheorem
+                    [name=Paradosso,sibling=theorem]{paradox}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.27 \declaretheorem
+                    [style=axiom_style,name=Assioma,sibling=theorem]{axiom}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.27 \declaretheorem[style=axiom_
+                                 style,name=Assioma,sibling=theorem]{axiom}
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+! Undefined control sequence.
+l.28 \declaretheorem
+                    [name=Definizione,numberwithin=section]{definition}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.29 \declaretheorem
+                    [style=exercise_style,name=Esempio,numberwithin=section]...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.30 \declaretheorem
+                    [style=exercise_style,name=Esercizio,numberwithin=sectio...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31 \declaretheorem
+                    [style=exercise_style,name=Osservazione,numberwithin=sec...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Missing $ inserted.
+<inserted text> 
+                $
+l.32 
+     
+I've inserted a begin-math/end-math symbol since I think
+you left one out. Proceed, with fingers crossed.
+
+
+Overfull \hbox (231.25044pt too wide) in paragraph at lines 22--32
+[]\OT1/cmr/m/n/10 [name=Teorema,numberwithin=section]theorem
+ []
+
+
+Overfull \hbox (172.44487pt too wide) in paragraph at lines 22--32
+\OT1/cmr/m/n/10 [name=Lemma,sibling=theorem]lemma
+ []
+
+
+Overfull \hbox (215.94498pt too wide) in paragraph at lines 22--32
+\OT1/cmr/m/n/10 [name=Proposizione,sibling=theorem]proposition
+ []
+
+
+Overfull \hbox (192.69492pt too wide) in paragraph at lines 22--32
+\OT1/cmr/m/n/10 [name=Corollario,sibling=theorem]corollary
+ []
+
+
+Overfull \hbox (190.11157pt too wide) in paragraph at lines 22--32
+\OT1/cmr/m/n/10 [name=Paradosso,sibling=theorem]paradox
+ []
+
+
+Overfull \hbox (117.70859pt too wide) in paragraph at lines 22--32
+\OT1/cmr/m/n/10 [style=axiom$[]\OML/cmm/m/it/10 tyle; name \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (84.41412pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 Assioma; sibling \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (106.01134pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 theorem\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 name \OT1/cmr/m/n/
+10 =
+ []
+
+
+Overfull \hbox (135.05719pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 Definizione; numberwithin \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (115.7171pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 section\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 style \OT1/cmr/m/n
+/10 =
+ []
+
+
+Overfull \hbox (97.64206pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 exercise[]tyle; name \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (118.34366pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 Esempio; numberwithin \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (106.39093pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 section\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 style \OT1/cmr/m/n
+/10 =
+ []
+
+
+Overfull \hbox (97.64206pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 exercise[]tyle; name \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (122.18463pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 Esercizio; numberwithin \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (106.0189pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 section\OT1/cmr/m/n/10 ][][\OML/cmm/m/it/10 style \OT1/cmr/m/n
+/10 =
+ []
+
+
+Overfull \hbox (97.64206pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 exercise[]tyle; name \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (140.19719pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 Osservazione; numberwithin \OT1/cmr/m/n/10 =
+ []
+
+
+Overfull \hbox (68.1768pt too wide) in paragraph at lines 22--32
+\OML/cmm/m/it/10 section\OT1/cmr/m/n/10 ][]$ 
+ []
+
+! Undefined control sequence.
+l.37 \DeclareMathOperator
+                         {\Imaginarypart}{Im}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.37 \DeclareMathOperator{\Imaginarypart
+                                        }{Im}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.37 \DeclareMathOperator{\Imaginarypart}{I
+                                           m}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.39 \DeclareMathOperator
+                         {\Realpart}{Re}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 \DeclareMathOperator{\Realpart
+                                   }{Re}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (31.94447pt too wide) in paragraph at lines 37--41
+[]\OT1/cmr/m/n/10 Im
+ []
+
+
+Overfull \hbox (11.80556pt too wide) in paragraph at lines 37--41
+\OT1/cmr/m/n/10 Re
+ []
+
+! Undefined control sequence.
+l.102 \DeclareMathOperator
+                          {\Ima}{Im}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.102 \DeclareMathOperator{\Ima
+                               }{Im}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.102 \DeclareMathOperator{\Ima}{I
+                                  m}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+! Emergency stop.
+<*> ./math.tex
+              
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 55 strings out of 478893
+ 624 string characters out of 2849009
+ 292412 words of memory out of 3000000
+ 18029 multiletter control sequences out of 15000+600000
+ 404443 words of font info for 30 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 18i,2n,15p,102b,70s stack positions out of 5000i,500n,10000p,200000b,80000s
+!  ==> Fatal error occurred, no output PDF file produced!
