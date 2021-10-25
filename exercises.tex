@@ -37,6 +37,12 @@ aperto se e solo se è unione arbitraria di sottoinsiemi $U \times V$ dove
 $U \subseteq X$ e $V \subseteq Y$ sono entrambi aperti. Mostra che questa è
 veramente una topologia su $X \times Y$.
 \begin{proof}[Svolgimento]
+Sicuramente l'insieme vuoto $\emptyset$ e l'intero insieme $X \times Y$ sono
+aperti nella topologia prodotto, visto che si possono scrivere come prodotto
+di sottoinsiemi aperti di $X$ e $Y$. Basta prendere come sottoinsiemi aperti
+gli insiemi vuoti $\emptyset_X$ e $\emptyset_Y$ degli spazi di partenza e i
+sottoinsiemi interi $X$ e $Y$ aperti per definizione negli spazi topologici
+$X$ e $Y$.
 
 \end{proof}
 \end{exercise}
@@ -47,7 +53,11 @@ un insieme $Y.$ La topologia quoziente su $Y$ è definita nel modo seguente:
 un sottoinsieme $A \subseteq Y$ è aperto se e solo se la sua controimmagine
 $f^{-1}(A)$ è aperta. Mostra che questa è veramente una topologia su $X$.
 \begin{proof}[Svolgimento]
-
+Osserviamo che la controimmagine dell'insieme vuoto $\emptyset$ e
+dell'insieme delle classi di equivalenza $Y$ definite da $f$ sono
+rispettivamente $f^{-1}(\emptyset) = \emptyset$ e $f^{-1}(Y) = X$, che
+sono entrambi aperti in $X$ per definizione di spazio topologico.
+ 
 \end{proof}
 \end{exercise}
 
@@ -81,9 +91,29 @@ aperto di $X$.
 Sia $K$ uno spazio topologico compatto. Sia $C \subseteq K$ un sottoinsieme
 chiuso. Mostra che $C$ è compatto.
 \begin{proof}[Svolgimento]
-Per ipotesi esiste un ricoprimento aperto finito $\left\{A_i\right\}$ tale
-che $\bigcup_i A_i = K$. Se $C \subseteq K$, allora lo stesso ricoprimento
-a maggior ragione copre anche $C$ e continua ad essere finito.
+Per ipotesi tutti i ricoprimenti aperti di $K$, $\left\{A_i\right\}_{i \in I} : K \subseteq \bigcup_{i \in I} A_i$ ammettono un sottoricoprimento
+finito $\left\{A_i\right\}$ tale che $\bigcup_i A_i = K$.
+\`E chiaro come ogni ricoprimento aperto di $C$ $\left\{U_i\right\}_{i \in I}$
+tale che $K \subseteq \bigcup_{i \in I} U_i$ debba essere anche un
+ricoprimento di $K$, quindi per ipotesi ammette sottoricoprimento finito
+$\left\{U_i\right\} : \bigcup_i U_i = K$ la cui intersezione con $C$ è
+sicuramente un suo sottoricoprimento aperto finito
+$\left\{U_i \cap C\right\} : \bigcup_i U_i \cap C = C$.
+
+Nel caso opposto $K \nsubseteq \bigcup_{i \in I} U_i$ basta considerare
+come ricoprimento $\left\{U_i \right\}_{i \in I} \cup C^c$, che è
+ancora aperto in quanto unione di aperti ($C^c = K \setminus C$ aperto perché
+$C$-chiuso per ipotesi). Questo è un ricoprimento di $K$, quindi come prima
+per compattezza sappiamo che ammette sottoricoprimento finito
+$\left\{U_i \cup C^c \right\}_i :  \bigcup_i U_i \cup C^c =K$ la cui
+restrizione a $C$ è un suo sottoricoprimento aperto finito.
+
+\iffalse
+Considerando solo spazi topologici nello spazio euclideo $\R^n$:
+Per il Teorema di Heine-Borel $K$ è compatto $\iff$ $K$ è chiuso e limitato.
+$C \subseteq K$ è sottoinsieme di un insieme limitato, quindi è limitato.
+Per ipotesi $C$ è chiuso, quindi è anche compatto.
+\fi
 \end{proof}
 \end{exercise}
 
@@ -134,7 +164,7 @@ per $S^n$ e verifica che sono lisce.
 \begin{exercise}
 Mostra che la mappa
 \[
-f: S^n \to \R\PP^n, (x_1, x_2, \ldots, x_{n+1} \mapsto
+f: S^n \to \R\PP^n, (x_1, x_2, \ldots, x_{n+1}) \mapsto
 [x_1, x_2, \ldots, x_{n+1}]
 \]
 è liscia.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.11)  17 OCT 2021 17:14
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2021/W32TeX) (preloaded format=pdflatex 2021.10.11)  18 OCT 2021 22:38
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1288,34 +1288,33 @@ LaTeX Font Info:    Font shape `U/msb/m/n' will be
 Package hyperref Info: bookmark level for unknown exercise defaults to 0 on inp
 ut line 34.
 LaTeX Font Info:    Font shape `U/msa/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 76.
+(Font)              scaled to size 11.40997pt on input line 79.
 LaTeX Font Info:    Font shape `U/msb/m/n' will be
-(Font)              scaled to size 11.40997pt on input line 76.
+(Font)              scaled to size 11.40997pt on input line 79.
  [1
 
 {c:/texlive/2021/texmf-var/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
-115.
-
-(c:/texlive/2021/texmf-dist/tex/latex/psnfss/ufplmbb.fd
-File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
-)
 Package microtype Info: Character `013' is missing
 (microtype)             in font `OT1/pplj/m/sc/10.95'.
 (microtype)             Ignoring protrusion settings for this character.
- [2] [3]
-(./exercises.aux)
+ [2]
+LaTeX Font Info:    Trying to load font information for U+fplmbb on input line 
+145.
+
+(c:/texlive/2021/texmf-dist/tex/latex/psnfss/ufplmbb.fd
+File: ufplmbb.fd 2003/10/30 Fontinst v1.914 font definitions for U/fplmbb.
+) [3] (./exercises.aux)
 Package rerunfilecheck Info: File `exercises.out' has not changed.
 (rerunfilecheck)             Checksum: 2B23CB25C35EDDE3D8255DCFEE6537D0;164.
  ) 
 Here is how much of TeX's memory you used:
- 34259 strings out of 479713
- 673519 string characters out of 5876923
- 1047936 words of memory out of 10000000
- 51123 multiletter control sequences out of 15000+600000
- 463499 words of font info for 301 fonts, out of 8000000 for 9000
+ 34285 strings out of 479713
+ 673747 string characters out of 5876923
+ 1046936 words of memory out of 10000000
+ 51124 multiletter control sequences out of 15000+600000
+ 464789 words of font info for 321 fonts, out of 8000000 for 9000
  418 hyphenation exceptions out of 8191
- 123i,22n,122p,406b,987s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 123i,23n,122p,406b,1092s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1327,13 +1326,14 @@ onts/cm/cmsy10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/fpl/fplbj8a.p
 fb><c:/texlive/2021/texmf-dist/fonts/type1/public/mathpazo/fplmbb.pfb><c:/texli
 ve/2021/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb><c:/texlive/2021/texmf
 -dist/fonts/type1/public/mathpazo/fplmri.pfb><c:/texlive/2021/texmf-dist/fonts/
-type1/public/fpl/fplrc8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/palati
-no/uplb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><
-c:/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on exercises.pdf (3 pages, 137914 bytes).
+type1/public/fpl/fplrc8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/public/ams
+fonts/symbols/msbm10.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/palatino/u
+plb8a.pfb><c:/texlive/2021/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb><c:/t
+exlive/2021/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on exercises.pdf (3 pages, 143700 bytes).
 PDF statistics:
- 119 PDF objects out of 1000 (max. 8388607)
- 89 compressed objects within 1 object stream
+ 124 PDF objects out of 1000 (max. 8388607)
+ 92 compressed objects within 1 object stream
  28 named destinations out of 1000 (max. 500000)
  91157 words of extra memory for PDF output out of 106986 (max. 10000000)
 
