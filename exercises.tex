@@ -107,13 +107,6 @@ $C$-chiuso per ipotesi). Questo è un ricoprimento di $K$, quindi come prima
 per compattezza sappiamo che ammette sottoricoprimento finito
 $\left\{U_i \cup C^c \right\}_i :  \bigcup_i U_i \cup C^c =K$ la cui
 restrizione a $C$ è un suo sottoricoprimento aperto finito.
-
-\iffalse
-Considerando solo spazi topologici nello spazio euclideo $\R^n$:
-Per il Teorema di Heine-Borel $K$ è compatto $\iff$ $K$ è chiuso e limitato.
-$C \subseteq K$ è sottoinsieme di un insieme limitato, quindi è limitato.
-Per ipotesi $C$ è chiuso, quindi è anche compatto.
-\fi
 \end{proof}
 \end{exercise}
 
@@ -190,4 +183,103 @@ Mostra che $\R\PP^1$ e $S^1$ sono diffeomorfi.
 
 \end{proof}
 \end{exercise}
+
+\section{Esercizi del 16/10/2021}
+\begin{exercise}
+Costruisci un embedding del toro $n$-dimensionale
+\[
+S^1 \times S^1 \times \cdots \times S^1 \hookrightarrow \R^{n + 1}
+.\] 
+per ogni $n \geq 1$.
+\begin{proof}[Svolgimento]
+
+\end{proof}
+\end{exercise}
+
+Un sottoinsieme $Y$ di uno spazio topologico $X$ è \emph{denso} se interseca
+qualsiasi aperto di $X$
+
+\begin{exercise}
+Siano $p$, $q$ due numeri reali con $\dfrac{p}{q}$ irrazionale. Mostra che la
+mappa
+\[
+f : \R \to S^1 \times S^1 \\
+t \mapsto \left( e^{ipt}, e^{iqt} \right)
+\] 
+è una immersione iniettiva ma non un embedding: l’immagine è densa in
+$S^1 \times S^1$ quindi non può essere una sottovarietà.
+\begin{proof}[Svolgimento]
+    
+\end{proof}
+\end{exercise}
+
+\begin{exercise}
+Sia $f: \R\PP^2 \to \R^4$ la mappa
+\[
+f([x, y, z]) = \frac{1}{x^2 + y^2 + z^2} (x^2 - y^2, xy, xz, yz)
+\] 
+Mostra che $f$ è un embedding.
+\begin{proof}[Svolgimento]
+    
+\end{proof}
+\end{exercise}
+
+\begin{exercise}
+Sia $S^{2n - 1} \subset \R^{2n}$ una sfera di dimensione dispari. Considera il
+campo vettoriale tangente su $S^{2n - 1}$:
+\[
+X(x_1, x_2, \ldots, x_{2n}) =
+\left(x_2, -x_1, x_4, -x_3, \ldots, x_{2n}, -x_{2n - 1}\right)
+\] 
+Scrivi esplicitamente il flusso di questo campo e determina le sue linee
+integrali.
+\begin{proof}[Svolgimento]
+    
+\end{proof}
+\end{exercise}
+
+\begin{exercise}
+Siano $X$ e $Y$ due campi vettoriali in $\R^n$. Mostra che
+\[
+[X, Y]^i = X^j \frac{\partial Y^i}{\partial x^j} -
+Y^j \frac{\partial X^i}{\partial x^j}
+.\] 
+\begin{proof}[Svolgimento]
+    
+\end{proof}
+\end{exercise}
+
+\begin{exercise}
+Data una matrice quadrata $A$, sia $X_A$ il campo vettoriale su $\R^n$ dato da
+$X_A(x) = Ax$. Mostra che
+\[
+[X_A, X_B] = X_{BA - AB}
+.\] 
+\begin{proof}[Svolgimento]
+    
+\end{proof}
+\end{exercise}
+
+\begin{exercise}
+Dimostra l'identità di Jacobi: dati tre campi vettoriali $X$, $Y$, $Z$ su
+una varietà $M$, vale
+\[
+[[X, Y], Z] + [[Y, Z], X] + [[Z, X], Y] \equiv 0
+.\] 
+\begin{proof}[Svolgimento]
+    
+\end{proof}
+\end{exercise}
+
+\begin{exercise}
+Sia $M$ una varietà, siano $X$, $Y$ campi vettoriali su $M$ e $f$,
+$g \in C^\infty (M)$. Mostra che
+\[
+[fX, gY] = fg[X, Y] - f(Xg)Y - g(Yf)X
+.\] 
+\begin{proof}[Svolgimento]
+    
+\end{proof}
+\end{exercise}
+
 \end{document}
