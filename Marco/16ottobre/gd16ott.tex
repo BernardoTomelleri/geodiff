@@ -1,0 +1,62 @@
+\documentclass[italian,a4paper,11pt]{article}
+
+\input{../preamble}
+\input{../math}
+
+\geometry{a4paper, left=30mm, right=30mm, top=30mm, bottom=30mm}
+
+
+\title{Esercizi di Geometria Differenziale\\ del 16 Ottobre}
+\author{Marco Romagnoli (578061)\thanks{svolti insieme a Bernardo Tomelleri (587829)}}
+\date{\today}
+
+
+\begin{document}
+\maketitle
+
+\section*{Esercizio 2.5}
+\begin{proof}[Svolgimento]
+Siano $X$ e $Y$ due campi vettoriali in $\RR^n$ e sia $f:\RR^n \rightarrow \RR$ liscia. Sapendo che $X = x^i \pdv{}{x^i}$ e $Y = y^j \pdv{}{x^j}$, dove è stata usata la notazione di Einstein per le sommatorie sui doppi indici, si ha che 
+\begin{align*}
+\comm{X}{Y}f &= XYf - YXf = x^i \pdv{}{x^i}\left(y^j \pdv{f}{x^j}\right) - y^j \pdv{}{x^j}\left(x^i \pdv{f}{x^i}\right) = \\
+&= x^i \left(\pdv{y^j}{x^i} \pdv{f}{x^j} + y^j \pdv[2]{f}{x^i}{x^j}\right) - y^j \left(\pdv{x^i}{x^j} \pdv{f}{x^i} + x^i \pdv[2]{f}{x^j}{x^i}\right)
+\end{align*}
+Essendo $f$ liscia in $\RR^n$, vale il teorema di Schwarz e quindi le derivate parziali miste commutano. Perciò il termine $$x^iy^j  \pdv[2]{f}{x^i}{x^j} - y^jx^i  \pdv[2]{f}{x^j}{x^i}$$ si annulla, dato che è una sommatoria su tutti gli indici $i$e $j$.\\
+Quindi alla fine rimane solo $$\comm{X}{Y}f = x^i \pdv{y^j}{x^i} \pdv{f}{x^j} - y^j \pdv{x^i}{x^j} \pdv{f}{x^i}$$ da cui, cambiando opportunamente gli indici, si ricava la tesi: $$\comm{X}{Y}^i = x^j \pdv{y^i}{x^j} - y^j \pdv{x^i}{x^j}.$$  
+\end{proof}
+
+\section*{Esercizio 2.6}
+\begin{proof}[Svolgimento]
+Siano $X$,$Y$ e $Z$ tre campi vettoriali su una varietà $M$. Per la bilinearità del commutatore, si ha che:
+\begin{equation*}
+\comm{\comm{X}{Y}}{Z} = \comm{XY}{Z} - \comm{YX}{Z} = XYZ - ZXY - YXZ + ZYX.
+\end{equation*}
+Permutando ciclicamente i campi si ottiene:
+\begin{align*}
+\comm{\comm{X}{Y}}{Z} &= XYZ - ZXY - YXZ + ZYX\\
+\comm{\comm{Y}{Z}}{X} &= YZX - XYZ - ZYX + XZY\\
+\comm{\comm{X}{Y}}{Z} &= ZXY - YZX - XZY + YXZ
+\end{align*}
+Da qui si vede chiaramente che, a destra dell'uguale, per ogni termine compare anche il suo opposto. Quindi, sommando tutto, il risultato si annulla: $$\comm{\comm{X}{Y}}{Z} + \comm{\comm{Y}{Z}}{X} + \comm{\comm{Y}{Z}}{X} = 0.$$ 
+\end{proof}
+
+\section*{2.8}
+\begin{proof}
+Siano $X$ e $Y$ due campi vettoriali su una varietà $M$ e sia $f,g,h:M \rightarrow \RR$ lisce. Inizialmente si può vedere che
+\begin{align*}
+\comm{fX}{Y}h &= fXYh - Y(fX)h = fXYh - (Yf)(Xh) + fYXh =\\
+&= f\comm{X}{Y}h - (Yf)(Xh)
+\end{align*}
+dove è stato usato il fatto che $Y$ è una derivazione.\\
+Per cui vale analogamente che 
+\begin{align*}
+\comm{X}{gY}h &= X(gY)h - gYXh = (Xg)(Yh) + gXYh - gYXh = \\
+&= g\comm{X}{Y}h + (Xg)(Yh)
+\end{align*} 
+da cui, combinando i due risultati, si ottiene la tesi
+\begin{equation*}
+\comm{fX}{gY} = f\comm{X}{gY} - g(Yf)X = fg\comm{X}{Y} + f(Xg)Y - g(Yf)X.
+\end{equation*}
+\end{proof}
+
+\end{document}
