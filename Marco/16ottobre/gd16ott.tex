@@ -21,7 +21,7 @@ Siano $X$ e $Y$ due campi vettoriali in $\RR^n$ e sia $f:\RR^n \rightarrow \RR$ 
 \comm{X}{Y}f &= XYf - YXf = x^i \pdv{}{x^i}\left(y^j \pdv{f}{x^j}\right) - y^j \pdv{}{x^j}\left(x^i \pdv{f}{x^i}\right) = \\
 &= x^i \left(\pdv{y^j}{x^i} \pdv{f}{x^j} + y^j \pdv[2]{f}{x^i}{x^j}\right) - y^j \left(\pdv{x^i}{x^j} \pdv{f}{x^i} + x^i \pdv[2]{f}{x^j}{x^i}\right)
 \end{align*}
-Essendo $f$ liscia in $\RR^n$, vale il teorema di Schwarz e quindi le derivate parziali miste commutano. Perciò il termine $$x^iy^j  \pdv[2]{f}{x^i}{x^j} - y^jx^i  \pdv[2]{f}{x^j}{x^i}$$ si annulla, dato che è una sommatoria su tutti gli indici $i$e $j$.\\
+Essendo $f$ liscia in $\RR^n$, vale il teorema di Schwarz e quindi le derivate parziali miste commutano. Perciò il termine $$x^iy^j  \pdv[2]{f}{x^i}{x^j} - y^jx^i  \pdv[2]{f}{x^j}{x^i}$$ si annulla, dato che è una sommatoria su tutti gli indici $i$ e $j$.\\
 Quindi alla fine rimane solo $$\comm{X}{Y}f = x^i \pdv{y^j}{x^i} \pdv{f}{x^j} - y^j \pdv{x^i}{x^j} \pdv{f}{x^i}$$ da cui, cambiando opportunamente gli indici, si ricava la tesi: $$\comm{X}{Y}^i = x^j \pdv{y^i}{x^j} - y^j \pdv{x^i}{x^j}.$$  
 \end{proof}
 
@@ -40,18 +40,18 @@ Permutando ciclicamente i campi si ottiene:
 Da qui si vede chiaramente che, a destra dell'uguale, per ogni termine compare anche il suo opposto. Quindi, sommando tutto, il risultato si annulla: $$\comm{\comm{X}{Y}}{Z} + \comm{\comm{Y}{Z}}{X} + \comm{\comm{Y}{Z}}{X} = 0.$$ 
 \end{proof}
 
-\section*{2.8}
+\section*{Esercizio 2.8}
 \begin{proof}
 Siano $X$ e $Y$ due campi vettoriali su una varietà $M$ e sia $f,g,h:M \rightarrow \RR$ lisce. Inizialmente si può vedere che
 \begin{align*}
 \comm{fX}{Y}h &= fXYh - Y(fX)h = fXYh - (Yf)(Xh) + fYXh =\\
-&= f\comm{X}{Y}h - (Yf)(Xh)
+&= f\comm{X}{Y}h - (Yf)(Xh) = \left( f\comm{X}{Y} - (Yf)X\right)h
 \end{align*}
 dove è stato usato il fatto che $Y$ è una derivazione.\\
 Per cui vale analogamente che 
 \begin{align*}
 \comm{X}{gY}h &= X(gY)h - gYXh = (Xg)(Yh) + gXYh - gYXh = \\
-&= g\comm{X}{Y}h + (Xg)(Yh)
+&= g\comm{X}{Y}h + (Xg)(Yh) = \left( g\comm{X}{Y} + (Xg)Y\right)h
 \end{align*} 
 da cui, combinando i due risultati, si ottiene la tesi
 \begin{equation*}

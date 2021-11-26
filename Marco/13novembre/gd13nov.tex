@@ -1,0 +1,77 @@
+\documentclass[italian,a4paper,10pt]{article}
+
+\input{../preamble}
+\input{../math}
+\newcommand{\sgn}{\operatorname{sgn}}
+
+\geometry{a4paper, left=30mm, right=30mm, top=30mm, bottom=30mm}
+
+
+\title{Esercizi di Geometria Differenziale\\ del 16 Ottobre}
+\author{Marco Romagnoli (578061)\thanks{svolti insieme a Bernardo Tomelleri (587829)}}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Esercizio 3.3}
+Suppongo per assurdo che esistano $\overline{v}$ e $\overline{w}$ tali per cui $$\overline{v} \otimes \overline{w} = v \otimes w + v' \otimes w'.$$
+Sapendo che $v$ e $v'$ sono indipendenti, così come $w$ e $w'$, considero due basi di $V$ 
+\begin{align*}
+\mathfrak{B}_1 &= \{ v_1 = v, v_2=v', v_3,\ldots,v_n\}\\
+\mathfrak{B}_2 &= \{ w_1 = w, w_2 = w', w_3,\ldots	,w_n\}
+\end{align*}
+con le quali posso esprimere $\overline{v}$ e $\overline{w}$ come $$\overline{v} = \sum^n_{i=1} a_i v_i \qquad  \overline{w} = \sum^n_{j=1} b_j w_j$$
+Quindi posso riscrivere
+\begin{align*}
+\overline{v} \otimes \overline{w} = \sum^n_{i=1} \sum^n_{j=1} a_i b_j v_i \otimes w_j
+\end{align*}
+ma, dato che i $\{v_i \otimes w_j\}$ formano una base per $\mathcal{T}^0_2$, i coefficienti devono essere $a_1b_1=a_2b_2=1$ e nulli tutti gli altri, in particolare $a_1b_2=a_2b_1=0$ che è chiaramente impossibile.\\
+Quindi $v \otimes w + v' \otimes w'$ non può essere un elemento puro.
+
+\section*{Esercizio 3.6}
+\begin{proof}[Svolgimento]
+Sia $\widetilde{T}$ un tensore di rango $(0,k)$ tale che $\widetilde{T}=T_S +T_A$ per un qualche coppia di tensori dello stesso rango $T_S$ simmetrico e $T_A$ antisimmetrico. Si può vedere facilmente che $$S(\widetilde{T}) = S(T_S) + S(T_A) = T_S$$ poiché un tensore simmetrico è uguale al suo simmetrizzato, mentre il simmetrizzato di un tensore antisimmetrico è nullo. Allo stesso modo si che $A(\widetilde{T}) = T_A$, quindi deve essere $$\widetilde{T}=S(\widetilde{T})+A(\widetilde{T}).$$
+Se $k=2$ ogni tensore $T$ può essere espresso in questo modo, infatti 
+\begin{align*}
+T(v_1,v_2) &= \frac12 \left(T(v_1,v_2) + T(v_2,v_1)\right) + \frac12 \left(T(v_1,v_2) - T(v_2,v_1)\right) =\\
+&= S(T)(v_1,v_2) + A(T)(v_1,v_2) \qquad \forall v_1,v_2 \in V
+\end{align*}
+Questo non vale per un generico $k\geq 3$, infatti si ha in generale 
+\begin{align*}
+S(T)(v_1,\ldots,v_k) + A(T)(v_1,\ldots,v_k) &= \frac{1}{k!}\sum_{\sigma\in S_k}{T(v_{\sigma(1)},\ldots,v_{\sigma(k)})} + \frac{1}{k!}\sum_{\sigma\in S_k}{\sgn{(\sigma)}T(v_{\sigma(1)},\ldots,v_{\sigma(k)})}=\\
+&=\frac{2}{k!}\sum_{\sigma \;\text{pari}}{T(v_{\sigma(1)},\ldots,v_{\sigma(k)})} \neq T(v_1,\ldots,v_k)
+\end{align*}
+Se ad esempio prendo $T= e^1 \otimes e^2 \otimes \ldots \otimes e^k$, con $\{e^1,\ldots ,e^k\}$ base duale di $V^*$, a cui applico l'elemento $(e_{\tilde{\sigma}(1)},\ldots,e_{\tilde{\sigma}(k)})$, 
+con $\{e_1,\ldots ,e_k\}$ base di $V$ e $\tilde{\sigma} \in S_k$ pari (diversa dall'identità), ottengo $0$, mentre se applico lo stesso elemento a $S(T) + A(T)$ ottengo $1$.
+\end{proof}
+
+\section*{Esercizio 3.7}
+\begin{proof}[Svolgimento]
+Sia $T$ un tensore di rango $(0,k)$. Se $T$ è antisimmetrico si ha per definizione che $$T(v_1,\ldots,v_i,\ldots,v_j,\ldots,v_k)=-T(v_1,\ldots,v_j,\ldots,v_i,\ldots,v_k)$$ per ogni coppa di indici $i\neq j$.
+In particolare se $v_i=v_j=v$ si ha che 
+\begin{align*}
+&T(v_1,\ldots,v,\ldots,v,\ldots,v_k)=-T(v_1,\ldots,v,\ldots,v,\ldots,v_k)\\ &\Rightarrow T(v_1,\ldots,v,\ldots,v,\ldots,v_k) =0
+\end{align*}
+Se $T$ possiede la proprietà per cui $T(v_1,\ldots,v_k)=0$ se due qualsiasi vettori coincidono, si ha che vale
+\begin{align*}
+0 &=T(v_1,\ldots,v-w,\ldots,v-w,\ldots,v_k) =\\
+&= -T(v_1,\ldots,v,\ldots,w,\ldots,v_k)-T(v_1,\ldots,w,\ldots,v,\ldots,v_k)\\
+&\Rightarrow T(v_1,\ldots,v,\ldots,w,\ldots,v_k)=-T(v_1,\ldots,w,\ldots,v,\ldots,v_k)
+\end{align*}
+Quindi $T$ è antisimmetrico.\\
+
+Se il simmetrizzato di $T$ è identicamente nullo, per la multilinearità di $T$ e il fatto che la cardinalità di $S_k$ è $k!$, si ha che:
+\begin{align*}
+S(T)(v,\ldots,v)=\frac{1}{k!}\sum_{\sigma\in S_k}{T(v,\ldots,v)}= \frac{k!}{k!}T\left(v,\ldots,v)= T(v,\ldots,v\right)=0 \quad \forall v\in V
+\end{align*}
+Al contrario, avendo $T$ la proprietà per cui $$T(v,\ldots,v)=0 \quad \forall v\in V$$ e prendendone il simmetrizzato si ha che 
+\begin{align*}
+S(T)(v_1,\ldots,v_k)=\frac{1}{k!}\sum_{\sigma\in S_k}{T(v_{\sigma(1)},\ldots,v_{\sigma(k)})}&=\\
+= \frac{1}{k!}T\left((k-1)!\sum_{i=0}^k{v_i},\ldots,(k-1)!\sum_{i=0}^k{v_i}\right) &= 
+ T\left(\sum_{i=0}^k{v_i},\ldots,\sum_{i=0}^k{v_i}\right)=0
+\end{align*}
+
+\end{proof}
+
+\end{document}

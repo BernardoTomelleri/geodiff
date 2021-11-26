@@ -1,13 +1,13 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.10.4)  7 NOV 2021 23:05
+This is pdfTeX, Version 3.141592653-2.6-1.40.23 (MiKTeX 21.8) (preloaded format=pdflatex 2021.10.4)  26 NOV 2021 23:13
 entering extended mode
-**./gd16ott.tex
-(gd16ott.tex
+**./gd13nov.tex
+(gd13nov.tex
 LaTeX2e <2021-06-01> patch level 1
 L3 programming layer <2021-08-27>
 (C:\Users\mrmar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\article.cls
 Document Class: article 2021/02/12 v1.4n Standard LaTeX document class
-(C:\Users\mrmar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size11.clo
-File: size11.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
+(C:\Users\mrmar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/base\size10.clo
+File: size10.clo 2021/02/12 v1.4n Standard LaTeX file (size option)
 )
 \c@part=\count182
 \c@section=\count183
@@ -1174,7 +1174,7 @@ Package: accents 2006/05/12 v1.4 Math Accent Tools
 \cc@group=\count347
 \cc@skewchar=\count348
 )
-\openout3 = `gd16ott.auxlock'.
+\openout3 = `gd13nov.auxlock'.
 
 ) (../math.tex
 Package thmtools Info: Key `qed' (with value `')
@@ -1194,8 +1194,8 @@ Package thmtools Info: Key `qed' (with value `')
 \c@example=\count351
 \c@exercise=\count352
 \c@remark=\count353
-) (gd16ott.aux)
-\openout1 = `gd16ott.aux'.
+) (gd13nov.aux)
+\openout1 = `gd13nov.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
@@ -1234,9 +1234,9 @@ Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
 LaTeX Info: Redefining \ref on input line 14.
 LaTeX Info: Redefining \pageref on input line 14.
 LaTeX Info: Redefining \nameref on input line 14.
- (gd16ott.out) (gd16ott.out)
+ (gd13nov.out) (gd13nov.out)
 \@outlinefile=\write4
-\openout4 = `gd16ott.out'.
+\openout4 = `gd13nov.out'.
 
 
 (C:\Users\mrmar\AppData\Local\Programs\MiKTeX 2.9\tex/context/base/mkii\supp-pd
@@ -1287,12 +1287,12 @@ Package caption Info: End \AtBeginDocument code.
 * \topmargin=-23.91173pt
 * \headheight=12.0pt
 * \headsep=25.0pt
-* \topskip=11.0pt
+* \topskip=10.0pt
 * \footskip=30.0pt
-* \marginparwidth=50.0pt
-* \marginparsep=10.0pt
+* \marginparwidth=57.0pt
+* \marginparsep=11.0pt
 * \columnsep=10.0pt
-* \skip\footins=10.0pt plus 4.0pt minus 2.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
 * \hoffset=0.0pt
 * \voffset=0.0pt
 * \mag=1000
@@ -1329,21 +1329,35 @@ LaTeX Font Info:    Trying to load font information for U+wasy on input line 15
 (C:\Users\mrmar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/wasysym\uwasy.fd
 File: uwasy.fd 2020/01/19 v2.4 Wasy-2 symbol font definitions
 )
+LaTeX Font Info:    Trying to load font information for U+euf on input line 23.
+
+
+(C:\Users\mrmar\AppData\Local\Programs\MiKTeX 2.9\tex/latex/amsfonts\ueuf.fd
+File: ueuf.fd 2013/01/14 v3.01 Euler Fraktur
+)
+Overfull \hbox (18.37233pt too wide) detected at line 44
+[]
+ []
+
 [1
 
-{C:/Users/mrmar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}] [2]
-(gd16ott.aux)
-Package rerunfilecheck Info: File `gd16ott.out' has not changed.
+{C:/Users/mrmar/AppData/Local/MiKTeX/2.9/pdftex/config/pdftex.map}]
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
+
+ []
+
+[2] (gd13nov.aux)
+Package rerunfilecheck Info: File `gd13nov.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
  ) 
 Here is how much of TeX's memory you used:
- 40706 strings out of 478893
- 942617 string characters out of 2849009
- 1333359 words of memory out of 3000000
- 57907 multiletter control sequences out of 15000+600000
- 420632 words of font info for 77 fonts, out of 8000000 for 9000
+ 40713 strings out of 478893
+ 942804 string characters out of 2849009
+ 1332343 words of memory out of 3000000
+ 57911 multiletter control sequences out of 15000+600000
+ 420062 words of font info for 74 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 104i,13n,100p,746b,840s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 104i,11n,100p,746b,845s stack positions out of 5000i,500n,10000p,200000b,80000s
 pdfTeX warning (dest): name{Hfootnote.1} has been referenced but does not exi
 st, replaced by a fixed one
 
@@ -1352,25 +1366,26 @@ uper-t1.enc}{C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2.9/fonts/enc/dvips/c
 m-super/cm-super-ts1.enc}<C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2.9/font
 s/type1/public/amsfonts/cm/cmex10.pfb><C:/Users/mrmar/AppData/Local/Programs/Mi
 KTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/mrmar/AppData/Loca
-l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/mrmar/
-AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/
+l/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi5.pfb><C:/Users/mrmar/
+AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/
 Users/mrmar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cm
 r10.pfb><C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/am
-sfonts/cm/cmr8.pfb><C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2.9/fonts/type
+sfonts/cm/cmr7.pfb><C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2.9/fonts/type
 1/public/amsfonts/cm/cmsy10.pfb><C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2
-.9/fonts/type1/public/amsfonts/symbols/msbm10.pfb><C:/Users/mrmar/AppData/Local
-/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Users/mrmar/A
-ppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600.pfb><C:/U
-sers/mrmar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm08
-00.pfb><C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-
-super/sfrm0900.pfb><C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2.9/fonts/type
-1/public/cm-super/sfrm1095.pfb><C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2.
-9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/mrmar/AppData/Local/Progra
-ms/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Users/mrmar/AppData/
-Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1095.pfb>
-Output written on gd16ott.pdf (2 pages, 192119 bytes).
+.9/fonts/type1/public/amsfonts/cm/cmsy7.pfb><C:/Users/mrmar/AppData/Local/Progr
+ams/MiKTeX 2.9/fonts/type1/public/amsfonts/euler/eufm10.pfb><C:/Users/mrmar/App
+Data/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfbx1440.pfb><C:/Use
+rs/mrmar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm0600
+.pfb><C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-su
+per/sfrm0700.pfb><C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/
+public/cm-super/sfrm0800.pfb><C:/Users/mrmar/AppData/Local/Programs/MiKTeX 2.9/
+fonts/type1/public/cm-super/sfrm1000.pfb><C:/Users/mrmar/AppData/Local/Programs
+/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1200.pfb><C:/Users/mrmar/AppData/Lo
+cal/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfrm1728.pfb><C:/Users/mrma
+r/AppData/Local/Programs/MiKTeX 2.9/fonts/type1/public/cm-super/sfti1000.pfb>
+Output written on gd13nov.pdf (2 pages, 220157 bytes).
 PDF statistics:
- 107 PDF objects out of 1000 (max. 8388607)
+ 115 PDF objects out of 1000 (max. 8388607)
  7 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
