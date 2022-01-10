@@ -23,7 +23,7 @@ g_{21} = g_{12} &= \pdv{x}{\rho}\pdv{x}{\theta} + \pdv{y}{\rho}\pdv{y}{\theta} =
 g_{22} &= \left(\pdv{x}{\theta}\right)^2+\left(\pdv{y}{\theta}\right)^2 = \rho^2\cos^2{\theta}+\rho^2\sin^2{\theta} = \rho^2
 \end{align*}
 
-Per ricavare i simboli di Christoffel a partire dal tensore metrico si può usare la formula$$\Gamma^k_{ij} = \frac12 g^{kl}\left(\pdv{g_{il}}{x^j}+\pdv{g_{jl}}{x^i}-\pdv{g_{ij}}{x^l}\right)$$ da cui si ricava che
+Per ricavare i simboli di Christoffel a partire dal tensore metrico si può usare la formula$$\Gamma^k_{ij} = \frac12 g^{kl}\left(\pdv{g_{il}}{\overline{x}^j}+\pdv{g_{jl}}{\overline{x}^i}-\pdv{g_{ij}}{\overline{x}^l}\right)$$ da cui si ricava che
 \begin{align*}
 \Gamma^1_{11} &= \frac12 g^{11}\left(\pdv{g_{11}}{\rho}+\pdv{g_{11}}{\rho}-\pdv{g_{11}}{\rho}\right)=0\\
 \Gamma^1_{12}=\Gamma^1_{21} &= \frac12 g^{11}\left(\pdv{g_{11}}{\theta}+\pdv{g_{21}}{\rho}-\pdv{g_{21}}{\rho}\right)=0\\
@@ -63,6 +63,7 @@ Tramite quest'ultimo, sapendo che $g^{ij}=y^2\delta^{ij}$ sono le coordinate di 
 \Gamma^2_{12} = \Gamma^2_{21} &= \frac12g^{22}\left(\pdv{g_{12}}{y}+\pdv{g_{22}}{x}-\pdv{g_{12}}{y}\right)=0\\
 \Gamma^2_{22} &= \frac12g^{22}\left(\pdv{g_{22}}{y}+\pdv{g_{22}}{y}-\pdv{g_{22}}{y}\right)=\frac12y^2\left(-\frac{2}{y^3}\right)=-\frac1y\\
 \end{align*}
+Dal libro si può vedere che le geodetiche sono formate da  curve che hanno come supporto linee verticali e semicirconferenze ortogonali all'asse delle ascisse.
 \end{proof}
 
 \section*{Esercizio 5.10}
@@ -74,7 +75,7 @@ In questo caso, dato che $g_{ij}=\delta_{ij}$ e in particolare è costante, si h
 g_{jc}\Gamma^j_{ib} + g_{bj}\Gamma^j_{ic} = \delta_{jc}\eps^{ibj} + \delta_{bj}\eps^{icj} = \eps^{ibc}+\eps^{icb} = \eps^{ibc}-\eps^{ibc} = 0
 \end{equation*}
 Quindi $\nabla$ è compatibile con il tensore metrico euclideo. 
-Le geodetiche sono date dalle soluzioni dell'equazione $$D\dot{\bm{x}}= \ddot{\bm{x}} + \dot{x}^i\dot{x}^j\Gamma^k_{ij}=0$$
-Si può vedere che il fattore $\dot{x}^i\dot{x}^j$ è simmetrico per scambio degli indici $i$ e $j$, mentre $\Gamma^k_{ij}$ è antisimmetrico per lo stesso scambio. Quindi $\dot{x}^i\dot{x}^j\Gamma^k_{ij}=0$ e l'equazione da risolvere è solamente $\ddot{\bm{x}}=0$ e le geodetiche sono $\bm{x}=\bm{p}+\bm{v}t$ con $\bm{p},\bm{v} \in \RR^3$.
+Le geodetiche sono date dalle soluzioni dell'equazione $$D\dot{\bm{x}}= \ddot{\bm{x}} + \dot{x}^i\dot{x}^j\Gamma^k_{ij}\bm{e}_k=0$$
+Si può vedere che il fattore $\dot{x}^i\dot{x}^j$ è simmetrico per scambio degli indici $i$ e $j$, mentre $\Gamma^k_{ij}$ è antisimmetrico per lo stesso scambio. Quindi $\dot{x}^i\dot{x}^j\Gamma^k_{ij}=0$ e l'equazione da risolvere è solamente $\ddot{\bm{x}}=0$, per cui le geodetiche sono curve del tipo $\bm{x}(t)=\bm{p}+\bm{v}t$ con $\bm{p},\bm{v} \in \RR^3$.
 \end{proof}
 \end{document}
