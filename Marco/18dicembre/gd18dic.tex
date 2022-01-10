@@ -1,0 +1,80 @@
+\documentclass[italian,a4paper,10pt]{article}
+
+\input{../preamble}
+\input{../math}
+\newcommand{\sgn}{\operatorname{sgn}}
+
+\geometry{a4paper, left=30mm, right=30mm, top=30mm, bottom=30mm}
+
+
+\title{Esercizi di Geometria Differenziale\\ del 18 Dicembre}
+\author{Marco Romagnoli (578061)}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section*{Esercizio 5.6}
+\begin{proof}[Svolgimento]
+Per ricavare il tensore metrico si usa la formula del cambio di coordinate dei tensori per passare dalle coordinate cartesiane $(x,y)$ a quelle polari $(\rho,\theta)$ $$g_{ij} = \pdv{x^a}{\overline{x}^i} \pdv{x^b}{\overline{x}^j}g^E_{ab}$$ dove $\bm{g}^E$ è il tensore metrico euclideo e $\overline{x}^i$ sono le coordinate polari, da cui, sapendo che $x= \rho\cos{\theta}$ e $y= \rho\sin{\theta}$, si ricava:
+\begin{align*}
+g_{11} &= \left(\pdv{x}{\rho}\right)^2+\left(\pdv{y}{\rho}\right)^2 = \cos^2{\theta}+\sin^2{\theta} = 1\\
+g_{21} = g_{12} &= \pdv{x}{\rho}\pdv{x}{\theta} + \pdv{y}{\rho}\pdv{y}{\theta} = -\cos{\theta}\sin{\theta} + \cos{\theta}\sin{\theta} = 0\\
+g_{22} &= \left(\pdv{x}{\theta}\right)^2+\left(\pdv{y}{\theta}\right)^2 = \rho^2\cos^2{\theta}+\rho^2\sin^2{\theta} = \rho^2
+\end{align*}
+
+Per ricavare i simboli di Christoffel a partire dal tensore metrico si può usare la formula$$\Gamma^k_{ij} = \frac12 g^{kl}\left(\pdv{g_{il}}{x^j}+\pdv{g_{jl}}{x^i}-\pdv{g_{ij}}{x^l}\right)$$ da cui si ricava che
+\begin{align*}
+\Gamma^1_{11} &= \frac12 g^{11}\left(\pdv{g_{11}}{\rho}+\pdv{g_{11}}{\rho}-\pdv{g_{11}}{\rho}\right)=0\\
+\Gamma^1_{12}=\Gamma^1_{21} &= \frac12 g^{11}\left(\pdv{g_{11}}{\theta}+\pdv{g_{21}}{\rho}-\pdv{g_{21}}{\rho}\right)=0\\
+\Gamma^1_{22} &= \frac12 g^{11}\left(\pdv{g_{21}}{\theta}+\pdv{g_{21}}{\theta}-\pdv{g_{22}}{\rho}\right)=-\rho\\
+\Gamma^2_{11} &= \frac12 g^{22}\left(\pdv{g_{12}}{\rho}+\pdv{g_{12}}{\rho}-\pdv{g_{11}}{\theta}\right)=0\\
+\Gamma^2_{12}=\Gamma^2_{21} &= \frac12 g^{22}\left(\pdv{g_{22}}{\rho}+\pdv{g_{12}}{\theta}-\pdv{g_{21}}{\theta}\right)= \frac12 \rho^{-2} (2\rho) = \frac{1}{\rho}\\
+\Gamma^2_{22} &= \frac12 g^{22}\left(\pdv{g_{}}{\theta}+\pdv{g_{22}}{\theta}-\pdv{g_{22}}{\theta}\right)=0
+\end{align*} 
+dove $g^{ij}$ sono le coordinate di 
+\begin{equation*}
+\bm{g}^{-1}= \begin{pmatrix}
+1 & 0\\
+0 & \rho^{-2}\\
+\end{pmatrix}.
+\end{equation*}
+
+Da questo si può verificare che il tensore di Riemann è nullo sapendo che $$R_{ijk}^l = \pdv{\Gamma^l_{jk}}{x^i} - \pdv{\Gamma^l_{ik}}{x^j} + \Gamma^l_{im}\Gamma^n_{jk} - \Gamma^l_{jm}\Gamma^n_{ik}$$ e quindi esplicitando i conti (trascurando i termini in cui ogni addendo è nullo) si vede che:
+\begin{align*}
+R^1_{122} &= \pdv{\Gamma^1_{22}}{\rho} - \Gamma^1_{22}\Gamma^2_{12}= -1+\frac{\rho}{\rho}=0\\
+R^1_{212} &= -\pdv{\Gamma^1_{22}}{\rho} + \Gamma^1_{22}\Gamma^2_{12}= 1-\frac{\rho}{\rho}=0\\
+R^1_{221} &= \Gamma^1_{22}\Gamma^2_{12} - \Gamma^1_{22}\Gamma^2_{21} = 0\\
+R^2_{112} &= \pdv{\Gamma^2_{12}}{\rho} - \pdv{\Gamma^2_{12}}{\rho} + \Gamma^2_{12}\Gamma^2_{21} -\Gamma^2_{12}\Gamma^2_{21} = 0\\
+R^2_{121} &= \pdv{\Gamma^2_{21}}{\rho} + \Gamma^2_{12}\Gamma^2_{21}= -\frac{1}{\rho^2}+\frac{1}{\rho}\frac{1}{\rho}=0\\
+R^2_{211} &= -\pdv{\Gamma^2_{21}}{\rho} - \Gamma^2_{12}\Gamma^2_{21}= \frac{1}{\rho^2}-\frac{1}{\rho}\frac{1}{\rho}=0
+\end{align*}
+\end{proof}
+
+\section*{Esercizio 5.8}
+\begin{proof}[Svolgimento]
+Il piano iperbolico, in due dimensioni, è definito tramite il modello del semipiano come $$\HH^2 = \left\lbrace (x,y)\in \RR^2 | y>0 \right\rbrace $$ equipaggiato con il tensore metrico $\bm{g} = \frac{1}{y^2}\bm{g}_E$, dove $\bm{g}_E$ è il tensore metrico euclideo.
+Tramite quest'ultimo, sapendo che $g^{ij}=y^2\delta^{ij}$ sono le coordinate di $\bm{g}^{-1}$, si possono calcolare esplicitamente i simboli di Christoffel:
+\begin{align*}
+\Gamma^1_{11} &= \frac12g^{11}\left(\pdv{g_{11}}{x}+\pdv{g_{11}}{x}-\pdv{g_{11}}{x}\right)=0\\
+\Gamma^1_{12} = \Gamma^1_{21} &= \frac12g^{11}\left(\pdv{g_{11}}{y}+\pdv{g_{21}}{x}-\pdv{g_{12}}{x}\right)= \frac12y^2\left(-\frac{2}{y^3}\right)=-\frac1y\\ 
+\Gamma^1_{22} &= \frac12g^{11}\left(\pdv{g_{21}}{x}+\pdv{g_{21}}{y}-\pdv{g_{22}}{x}\right)=0\\
+\Gamma^2_{11} &= \frac12g^{22}\left(\pdv{g_{12}}{x}+\pdv{g_{12}}{x}-\pdv{g_{11}}{y}\right)=\frac12y^2\left(\frac{2}{y^3}\right)=\frac1y\\
+\Gamma^2_{12} = \Gamma^2_{21} &= \frac12g^{22}\left(\pdv{g_{12}}{y}+\pdv{g_{22}}{x}-\pdv{g_{12}}{y}\right)=0\\
+\Gamma^2_{22} &= \frac12g^{22}\left(\pdv{g_{22}}{y}+\pdv{g_{22}}{y}-\pdv{g_{22}}{y}\right)=\frac12y^2\left(-\frac{2}{y^3}\right)=-\frac1y\\
+\end{align*}
+\end{proof}
+
+\section*{Esercizio 5.10}
+\begin{proof}[Svolgimento]
+Data la connessione $\nabla$ su $\RR^3$ definita come nel testo dell'esercizio, si può vedere che $\Gamma^k_{ij}=\eps^{ijk}$ e quindi sicuramente non è simmetrico, infatti $\Gamma^k_{ij} = -\Gamma^k_{ji}$. 
+Affinché sia compatibile con $\bm{g}$ deve essere vero che $\nabla_v \bm{g} = 0 \quad \forall v \in \RR^3$ che in carte diventa $$v^i \left(\pdv{g_{bc}}{x^i} - g_{jc}\Gamma^j_{ib} - g_{bj}\Gamma^j_{ic}\right)=0$$
+In questo caso, dato che $g_{ij}=\delta_{ij}$ e in particolare è costante, si ha che
+\begin{equation*}
+g_{jc}\Gamma^j_{ib} + g_{bj}\Gamma^j_{ic} = \delta_{jc}\eps^{ibj} + \delta_{bj}\eps^{icj} = \eps^{ibc}+\eps^{icb} = \eps^{ibc}-\eps^{ibc} = 0
+\end{equation*}
+Quindi $\nabla$ è compatibile con il tensore metrico euclideo. 
+Le geodetiche sono date dalle soluzioni dell'equazione $$D\dot{\bm{x}}= \ddot{\bm{x}} + \dot{x}^i\dot{x}^j\Gamma^k_{ij}=0$$
+Si può vedere che il fattore $\dot{x}^i\dot{x}^j$ è simmetrico per scambio degli indici $i$ e $j$, mentre $\Gamma^k_{ij}$ è antisimmetrico per lo stesso scambio. Quindi $\dot{x}^i\dot{x}^j\Gamma^k_{ij}=0$ e l'equazione da risolvere è solamente $\ddot{\bm{x}}=0$ e le geodetiche sono $\bm{x}=\bm{p}+\bm{v}t$ con $\bm{p},\bm{v} \in \RR^3$.
+\end{proof}
+\end{document}
